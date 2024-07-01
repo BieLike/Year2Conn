@@ -41,6 +41,7 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtProductID = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnAdd = new System.Windows.Forms.Button();
             this.lbBillNo = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.LV = new System.Windows.Forms.ListView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,6 +183,15 @@
             this.btnCancel.Text = "ຍົກເລີກລາຍການຂາຍ";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "add-to-cart.png");
+            this.imageList1.Images.SetKeyName(1, "ecommerce.png");
+            this.imageList1.Images.SetKeyName(2, "payment.png");
+            this.imageList1.Images.SetKeyName(3, "logout.png");
             // 
             // btnAdd
             // 
@@ -309,6 +318,7 @@
             this.btnExit.TabIndex = 21;
             this.btnExit.Text = "ອອກ";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
@@ -360,15 +370,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "add-to-cart.png");
-            this.imageList1.Images.SetKeyName(1, "ecommerce.png");
-            this.imageList1.Images.SetKeyName(2, "payment.png");
-            this.imageList1.Images.SetKeyName(3, "logout.png");
             // 
             // frmSell
             // 

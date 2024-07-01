@@ -36,19 +36,18 @@
             this.ຈດການຂມນສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ຈດການຂມນຜສະໜອງToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ຈດການຂມນຜໃຊToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ນຳເຂາສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ຂາຍສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ລາຍງານToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ລາຍງານສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ລາຍງານການສງຊToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ລາຍງານການນຳເຂາສນຄາToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ລາຍງານການຂາຍToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ອອກຈາກລະບບToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tslbUsername = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +59,6 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem,
             this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem,
-            this.ນຳເຂາສນຄາToolStripMenuItem,
             this.ຂາຍສນຄາToolStripMenuItem,
             this.ລາຍງານToolStripMenuItem,
             this.ອອກຈາກລະບບToolStripMenuItem});
@@ -78,8 +76,7 @@
             this.ຈດການຂມນຫວໜວຍToolStripMenuItem,
             this.ຈດການຂມນສນຄາToolStripMenuItem,
             this.ຈດການຂມນຜສະໜອງToolStripMenuItem,
-            this.ຈດການຂມນຜໃຊToolStripMenuItem,
-            this.ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem});
+            this.ຈດການຂມນຜໃຊToolStripMenuItem});
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Name = "ຈດການຂມນປະເພດສນຄາToolStripMenuItem";
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Size = new System.Drawing.Size(149, 31);
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນພື້ນຖານ";
@@ -88,53 +85,44 @@
             // ຈດການຂມນປະເພດສນຄາToolStripMenuItem1
             // 
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1.Name = "ຈດການຂມນປະເພດສນຄາToolStripMenuItem1";
-            this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1.Size = new System.Drawing.Size(266, 32);
+            this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1.Size = new System.Drawing.Size(261, 32);
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1.Text = "ຈັດການຂໍ້ມູນປະເພດສິນຄ້າ";
             this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1.Click += new System.EventHandler(this.ຈດການຂມນປະເພດສນຄາToolStripMenuItem1_Click);
             // 
             // ຈດການຂມນຫວໜວຍToolStripMenuItem
             // 
             this.ຈດການຂມນຫວໜວຍToolStripMenuItem.Name = "ຈດການຂມນຫວໜວຍToolStripMenuItem";
-            this.ຈດການຂມນຫວໜວຍToolStripMenuItem.Size = new System.Drawing.Size(266, 32);
+            this.ຈດການຂມນຫວໜວຍToolStripMenuItem.Size = new System.Drawing.Size(261, 32);
             this.ຈດການຂມນຫວໜວຍToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນຫົວໜ່ວຍສິນຄ້າ";
             this.ຈດການຂມນຫວໜວຍToolStripMenuItem.Click += new System.EventHandler(this.ຈດການຂມນຫວໜວຍToolStripMenuItem_Click);
             // 
             // ຈດການຂມນສນຄາToolStripMenuItem
             // 
             this.ຈດການຂມນສນຄາToolStripMenuItem.Name = "ຈດການຂມນສນຄາToolStripMenuItem";
-            this.ຈດການຂມນສນຄາToolStripMenuItem.Size = new System.Drawing.Size(266, 32);
+            this.ຈດການຂມນສນຄາToolStripMenuItem.Size = new System.Drawing.Size(261, 32);
             this.ຈດການຂມນສນຄາToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນສິນຄ້າ";
             this.ຈດການຂມນສນຄາToolStripMenuItem.Click += new System.EventHandler(this.ຈດການຂມນສນຄາToolStripMenuItem_Click);
             // 
             // ຈດການຂມນຜສະໜອງToolStripMenuItem
             // 
             this.ຈດການຂມນຜສະໜອງToolStripMenuItem.Name = "ຈດການຂມນຜສະໜອງToolStripMenuItem";
-            this.ຈດການຂມນຜສະໜອງToolStripMenuItem.Size = new System.Drawing.Size(266, 32);
+            this.ຈດການຂມນຜສະໜອງToolStripMenuItem.Size = new System.Drawing.Size(261, 32);
             this.ຈດການຂມນຜສະໜອງToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນຜູ້ສະໜອງ";
+            this.ຈດການຂມນຜສະໜອງToolStripMenuItem.Click += new System.EventHandler(this.ຈດການຂມນຜສະໜອງToolStripMenuItem_Click);
             // 
             // ຈດການຂມນຜໃຊToolStripMenuItem
             // 
             this.ຈດການຂມນຜໃຊToolStripMenuItem.Name = "ຈດການຂມນຜໃຊToolStripMenuItem";
-            this.ຈດການຂມນຜໃຊToolStripMenuItem.Size = new System.Drawing.Size(266, 32);
+            this.ຈດການຂມນຜໃຊToolStripMenuItem.Size = new System.Drawing.Size(261, 32);
             this.ຈດການຂມນຜໃຊToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນຜູ້ໃຊ້";
-            // 
-            // ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem
-            // 
-            this.ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem.Name = "ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem";
-            this.ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem.Size = new System.Drawing.Size(266, 32);
-            this.ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem.Text = "ຈັດການຂໍ້ມູນອັດຕາແລກປຽ່ນ";
+            this.ຈດການຂມນຜໃຊToolStripMenuItem.Click += new System.EventHandler(this.ຈດການຂມນຜໃຊToolStripMenuItem_Click);
             // 
             // ກວດສອບແລະສງຊສນຄາToolStripMenuItem
             // 
             this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Name = "ກວດສອບແລະສງຊສນຄາToolStripMenuItem";
             this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Size = new System.Drawing.Size(179, 31);
             this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Text = "ກວດສອບແລະສັ່ງຊື້ສິນຄ້າ";
-            // 
-            // ນຳເຂາສນຄາToolStripMenuItem
-            // 
-            this.ນຳເຂາສນຄາToolStripMenuItem.Name = "ນຳເຂາສນຄາToolStripMenuItem";
-            this.ນຳເຂາສນຄາToolStripMenuItem.Size = new System.Drawing.Size(105, 31);
-            this.ນຳເຂາສນຄາToolStripMenuItem.Text = "ນຳເຂົ້າສິນຄ້າ";
+            this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Click += new System.EventHandler(this.ກວດສອບແລະສງຊສນຄາToolStripMenuItem_Click);
             // 
             // ຂາຍສນຄາToolStripMenuItem
             // 
@@ -148,35 +136,35 @@
             this.ລາຍງານToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ລາຍງານສນຄາToolStripMenuItem,
             this.ລາຍງານການສງຊToolStripMenuItem,
-            this.ລາຍງານການນຳເຂາສນຄາToolStripMenuItem,
             this.ລາຍງານການຂາຍToolStripMenuItem});
             this.ລາຍງານToolStripMenuItem.Name = "ລາຍງານToolStripMenuItem";
             this.ລາຍງານToolStripMenuItem.Size = new System.Drawing.Size(79, 31);
             this.ລາຍງານToolStripMenuItem.Text = "ລາຍງານ";
+            this.ລາຍງານToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານToolStripMenuItem_Click);
             // 
             // ລາຍງານສນຄາToolStripMenuItem
             // 
             this.ລາຍງານສນຄາToolStripMenuItem.Name = "ລາຍງານສນຄາToolStripMenuItem";
             this.ລາຍງານສນຄາToolStripMenuItem.Size = new System.Drawing.Size(258, 32);
             this.ລາຍງານສນຄາToolStripMenuItem.Text = "ລາຍງານສິນຄ້າ";
+            this.ລາຍງານສນຄາToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານສນຄາToolStripMenuItem_Click);
             // 
             // ລາຍງານການສງຊToolStripMenuItem
             // 
             this.ລາຍງານການສງຊToolStripMenuItem.Name = "ລາຍງານການສງຊToolStripMenuItem";
             this.ລາຍງານການສງຊToolStripMenuItem.Size = new System.Drawing.Size(258, 32);
             this.ລາຍງານການສງຊToolStripMenuItem.Text = "ລາຍງານການສັ່ງຊື້";
-            // 
-            // ລາຍງານການນຳເຂາສນຄາToolStripMenuItem
-            // 
-            this.ລາຍງານການນຳເຂາສນຄາToolStripMenuItem.Name = "ລາຍງານການນຳເຂາສນຄາToolStripMenuItem";
-            this.ລາຍງານການນຳເຂາສນຄາToolStripMenuItem.Size = new System.Drawing.Size(258, 32);
-            this.ລາຍງານການນຳເຂາສນຄາToolStripMenuItem.Text = "ລາຍງານການນຳເຂົ້າສິນຄ້າ";
+            this.ລາຍງານການສງຊToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານການສງຊToolStripMenuItem_Click);
             // 
             // ລາຍງານການຂາຍToolStripMenuItem
             // 
+            this.ລາຍງານການຂາຍToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem,
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem});
             this.ລາຍງານການຂາຍToolStripMenuItem.Name = "ລາຍງານການຂາຍToolStripMenuItem";
             this.ລາຍງານການຂາຍToolStripMenuItem.Size = new System.Drawing.Size(258, 32);
             this.ລາຍງານການຂາຍToolStripMenuItem.Text = "ລາຍງານການຂາຍ";
+            this.ລາຍງານການຂາຍToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານການຂາຍToolStripMenuItem_Click);
             // 
             // ອອກຈາກລະບບToolStripMenuItem
             // 
@@ -203,6 +191,20 @@
             this.tslbUsername.Name = "tslbUsername";
             this.tslbUsername.Size = new System.Drawing.Size(49, 20);
             this.tslbUsername.Text = "Status";
+            // 
+            // ລາຍງານການຂາຍຕາມມToolStripMenuItem
+            // 
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem.Name = "ລາຍງານການຂາຍຕາມມToolStripMenuItem";
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem.Size = new System.Drawing.Size(241, 32);
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem.Text = "ລາຍງານການຂາຍຕາມມື້";
+            this.ລາຍງານການຂາຍຕາມມToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານການຂາຍຕາມມToolStripMenuItem_Click);
+            // 
+            // ລາຍງານສນຄາຂາຍດToolStripMenuItem
+            // 
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem.Name = "ລາຍງານສນຄາຂາຍດToolStripMenuItem";
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem.Size = new System.Drawing.Size(241, 32);
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem.Text = "ລາຍງານສິນຄ້າຂາຍດີ";
+            this.ລາຍງານສນຄາຂາຍດToolStripMenuItem.Click += new System.EventHandler(this.ລາຍງານສນຄາຂາຍດToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -237,19 +239,18 @@
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນປະເພດສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນປະເພດສນຄາToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ກວດສອບແລະສງຊສນຄາToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ນຳເຂາສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຂາຍສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ລາຍງານToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ລາຍງານສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ລາຍງານການສງຊToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ລາຍງານການນຳເຂາສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ລາຍງານການຂາຍToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ອອກຈາກລະບບToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນຫວໜວຍToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນສນຄາToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນຜສະໜອງToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນຜໃຊToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ຈດການຂມນອດຕາແລກປຽນToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ລາຍງານການຂາຍຕາມມToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ລາຍງານສນຄາຂາຍດToolStripMenuItem;
     }
 }
 

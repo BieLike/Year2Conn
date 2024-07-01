@@ -15,9 +15,10 @@ namespace Year2Conn
 {
     public partial class frmRptData : Form
     {
-        public frmRptData(string FirstDate, string LastDate)
+        public frmRptData(String FirstDate, String LastDate)
         {
             InitializeComponent();
+
             ParameterField fDate = new ParameterField();
             ParameterField lDate = new ParameterField();
             ParameterDiscreteValue vFDate = new ParameterDiscreteValue();
@@ -33,9 +34,8 @@ namespace Year2Conn
             AllValue.Add(fDate);
             AllValue.Add(lDate);
             crvData.ParameterFieldInfo = AllValue;
+            crvData.SelectionFormula = "{tbSale.BillDate} IN '" + Convert.ToDateTime(FirstDate).ToString("yyyy-dd-MM") + "' To '" + Convert.ToDateTime(LastDate).ToString("yyyy-dd-MM") + "'  ";
 
-            crvData.SelectionFormula = "{tbSale.BillDate} IN '" + Convert.ToDateTime(FirstDate).ToString("yyyy-dd-MM") + "' To '" + Convert.ToDateTime(LastDate).ToString("yyyy-MM-dd") + "'  ";
-            
         }
 
 
@@ -52,6 +52,12 @@ namespace Year2Conn
 
         private void crvData_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
 
         }
     }

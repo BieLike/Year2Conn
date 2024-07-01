@@ -158,6 +158,7 @@
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "ອອກ";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 

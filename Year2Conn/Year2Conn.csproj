@@ -59,6 +59,12 @@
     <Compile Include="frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImport.Designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,29 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRptBestSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptBestSell.Designer.cs">
+      <DependentUpon>frmRptBestSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptByDate.Designer.cs">
+      <DependentUpon>frmRptByDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRptData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRptData.Designer.cs">
       <DependentUpon>frmRptData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptImport.Designer.cs">
+      <DependentUpon>frmRptImport.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRptProduct.cs">
       <SubType>Form</SubType>
@@ -94,6 +118,12 @@
     </Compile>
     <Compile Include="frmSell.Designer.cs">
       <DependentUpon>frmSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUnit.cs">
       <SubType>Form</SubType>
@@ -115,10 +145,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptBestSell1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBestSell1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptData.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptData.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptImport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptImport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rptProduct1.cs">
@@ -136,14 +178,26 @@
     <EmbeddedResource Include="frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRptBestSell.resx">
+      <DependentUpon>frmRptBestSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptByDate.resx">
+      <DependentUpon>frmRptByDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRptData.resx">
       <DependentUpon>frmRptData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptImport.resx">
+      <DependentUpon>frmRptImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRptProduct.resx">
       <DependentUpon>frmRptProduct.cs</DependentUpon>
@@ -153,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSell.resx">
       <DependentUpon>frmSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUnit.resx">
       <DependentUpon>frmUnit.cs</DependentUpon>
@@ -173,9 +230,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rptBestSell1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBestSell1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptData.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptData.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptImport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptImport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptProduct1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

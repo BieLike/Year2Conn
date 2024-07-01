@@ -16,7 +16,7 @@ namespace Year2Conn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRptData()) ;
+            Application.Run(new frmLogin()) ;
         }
     }
 }

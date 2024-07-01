@@ -22,7 +22,7 @@ namespace Year2Conn
             {
                 ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Enabled = false;
                 ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Enabled = false;
-                ນຳເຂາສນຄາToolStripMenuItem.Enabled = false;
+                //ນຳເຂາສນຄາToolStripMenuItem.Enabled = false;
                 ຂາຍສນຄາToolStripMenuItem.Enabled = true;
 
             }
@@ -30,7 +30,7 @@ namespace Year2Conn
             {
                 ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Enabled = true;
                 ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Enabled = true;
-                ນຳເຂາສນຄາToolStripMenuItem.Enabled = true;
+                //ນຳເຂາສນຄາToolStripMenuItem.Enabled = true;
                 ຂາຍສນຄາToolStripMenuItem.Enabled = false;
 
             }
@@ -38,7 +38,7 @@ namespace Year2Conn
             {
                 ຈດການຂມນປະເພດສນຄາToolStripMenuItem.Enabled = true;
                 ກວດສອບແລະສງຊສນຄາToolStripMenuItem.Enabled = true;
-                ນຳເຂາສນຄາToolStripMenuItem.Enabled = true;
+                //ນຳເຂາສນຄາToolStripMenuItem.Enabled = true;
                 ຂາຍສນຄາToolStripMenuItem.Enabled = true;
 
             }
@@ -180,6 +180,69 @@ namespace Year2Conn
         private void frmMain_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void ຈດການຂມນຜສະໜອງToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSupplier fs = new frmSupplier();
+            fs.Show();
+        }
+
+        private void ຈດການຂມນຜໃຊToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEmployee fey = new frmEmployee();
+            fey.Show();
+        }
+
+        private void ນຳເຂາສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ກວດສອບແລະສງຊສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmImport fip = new frmImport();
+            fip.Show();
+        }
+
+        private void ລາຍງານການຂາຍToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRptSell frs = new frmRptSell();
+            frs.Show();
+        }
+
+        private void ລາຍງານສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRptProduct frp = new frmRptProduct();
+            frp.Show();
+        }
+
+        private void ລາຍງານການສງຊToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRptImport fri = new frmRptImport();
+            fri.Show();
+        }
+
+        private void ລາຍງານການຂາຍຕາມມToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRptByDate frd = new frmRptByDate();
+            frd.Show();
+        }
+
+        private void ລາຍງານສນຄາຂາຍດToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRptBestSell frbs = new frmRptBestSell();
+            frbs.Show();
+        }
+
+        private void ລາຍງານToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ລາຍງານການນຳເຂາສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

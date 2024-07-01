@@ -203,6 +203,11 @@ namespace Year2Conn
 
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void txtQty_TextChanged(object sender, EventArgs e)
         {
             try
