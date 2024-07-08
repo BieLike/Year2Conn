@@ -37,24 +37,27 @@
             this.DGV = new System.Windows.Forms.DataGridView();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.txtCID = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(387, 150);
+            this.btnExit.Location = new System.Drawing.Point(881, -1);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(120, 41);
+            this.btnExit.Size = new System.Drawing.Size(54, 44);
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "ອອກ";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(261, 150);
+            this.btnDelete.Location = new System.Drawing.Point(634, 49);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(120, 41);
             this.btnDelete.TabIndex = 17;
@@ -65,7 +68,7 @@
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(135, 150);
+            this.btnEdit.Location = new System.Drawing.Point(770, 49);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(120, 41);
             this.btnEdit.TabIndex = 16;
@@ -76,9 +79,9 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(9, 150);
+            this.btnSave.Location = new System.Drawing.Point(634, 112);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 41);
+            this.btnSave.Size = new System.Drawing.Size(256, 41);
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "ບັນທຶກ";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -88,9 +91,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 76);
+            this.label2.Location = new System.Drawing.Point(54, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 31);
+            this.label2.Size = new System.Drawing.Size(62, 27);
             this.label2.TabIndex = 14;
             this.label2.Text = "ປະເພດ";
             // 
@@ -98,9 +101,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 5);
+            this.label1.Location = new System.Drawing.Point(37, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(106, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "ລະຫັດປະເພດ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -108,17 +111,17 @@
             // DGV
             // 
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Location = new System.Drawing.Point(12, 197);
+            this.DGV.Location = new System.Drawing.Point(408, 236);
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 24;
-            this.DGV.Size = new System.Drawing.Size(490, 377);
+            this.DGV.Size = new System.Drawing.Size(936, 409);
             this.DGV.TabIndex = 12;
             this.DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(204, 76);
+            this.txtCategory.Location = new System.Drawing.Point(165, 112);
             this.txtCategory.Multiline = true;
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(298, 44);
@@ -126,34 +129,44 @@
             // 
             // txtCID
             // 
-            this.txtCID.Location = new System.Drawing.Point(204, 5);
+            this.txtCID.Location = new System.Drawing.Point(165, 49);
             this.txtCID.Multiline = true;
             this.txtCID.Name = "txtCID";
             this.txtCID.Size = new System.Drawing.Size(298, 44);
             this.txtCID.TabIndex = 10;
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtCategory);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnEdit);
+            this.panel1.Controls.Add(this.txtCID);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Location = new System.Drawing.Point(408, 33);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(936, 178);
+            this.panel1.TabIndex = 19;
+            // 
             // Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 578);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1644, 696);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.DGV);
-            this.Controls.Add(this.txtCategory);
-            this.Controls.Add(this.txtCID);
             this.Name = "Category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Activated += new System.EventHandler(this.Form2_Activated);
             this.Load += new System.EventHandler(this.Category_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -168,5 +181,6 @@
         private System.Windows.Forms.DataGridView DGV;
         private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.TextBox txtCID;
+        private System.Windows.Forms.Panel panel1;
     }
 }

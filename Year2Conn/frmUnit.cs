@@ -23,7 +23,7 @@ namespace Year2Conn
 
         //Strcon,conn,da,ds,cmd;
 
-        string strcon = "data source = DESKTOP-7TT19G3\\SQLEXPRESS; initial catalog = HW1; integrated security = true";
+        string strcon = "data source = DESKTOP-TSHJDI9\\SQLEXPRESS; initial catalog = HW1; integrated security = true";
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();

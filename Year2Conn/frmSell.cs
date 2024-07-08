@@ -115,7 +115,7 @@ namespace Year2Conn
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error");
+               // MessageBox.Show("Error");
             }
         }
 
