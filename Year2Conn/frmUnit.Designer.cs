@@ -179,6 +179,7 @@
             this.Name = "Unit";
             this.Text = "Unit";
             this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Load += new System.EventHandler(this.Unit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

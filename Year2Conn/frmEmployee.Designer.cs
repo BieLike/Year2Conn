@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFname = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(49, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 27);
+            this.label1.Size = new System.Drawing.Size(54, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "ຊື່ຜູ້ໃຊ້";
             // 
@@ -85,7 +86,7 @@
             this.label2.Location = new System.Drawing.Point(49, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 27);
+            this.label2.Size = new System.Drawing.Size(58, 31);
             this.label2.TabIndex = 3;
             this.label2.Text = "ລະຫັດ";
             // 
@@ -97,13 +98,22 @@
             this.lb1.Location = new System.Drawing.Point(197, 40);
             this.lb1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(147, 27);
+            this.lb1.Size = new System.Drawing.Size(149, 31);
             this.lb1.TabIndex = 4;
             this.lb1.Text = "ຈັດການພະນັກງານ";
             // 
             // dgvEmp
             // 
+            this.dgvEmp.BackgroundColor = System.Drawing.Color.Silver;
             this.dgvEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmp.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEmp.Location = new System.Drawing.Point(174, 54);
             this.dgvEmp.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmp.Name = "dgvEmp";
@@ -112,6 +122,7 @@
             this.dgvEmp.Size = new System.Drawing.Size(652, 510);
             this.dgvEmp.TabIndex = 5;
             this.dgvEmp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellClick);
+            this.dgvEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmp_CellContentClick);
             // 
             // cmbAuthor
             // 
@@ -121,7 +132,7 @@
             "ພະນັກງານຈັດຊື້"});
             this.cmbAuthor.Location = new System.Drawing.Point(123, 279);
             this.cmbAuthor.Name = "cmbAuthor";
-            this.cmbAuthor.Size = new System.Drawing.Size(296, 35);
+            this.cmbAuthor.Size = new System.Drawing.Size(296, 39);
             this.cmbAuthor.TabIndex = 6;
             // 
             // label3
@@ -132,7 +143,7 @@
             this.label3.Location = new System.Drawing.Point(54, 287);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 27);
+            this.label3.Size = new System.Drawing.Size(49, 31);
             this.label3.TabIndex = 7;
             this.label3.Text = "ໜ້າທີ່";
             // 
@@ -205,7 +216,7 @@
             // 
             // frmEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1631, 671);
@@ -231,7 +242,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lb1;
-        private System.Windows.Forms.DataGridView dgvEmp;
         private System.Windows.Forms.ComboBox cmbAuthor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
@@ -239,5 +249,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvEmp;
     }
 }

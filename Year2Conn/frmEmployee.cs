@@ -61,6 +61,7 @@ namespace Year2Conn
         private void frmEmployee_Load(object sender, EventArgs e)
         {
             ShowData();
+            dgvEmp.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
 
         }
 
@@ -97,6 +98,11 @@ namespace Year2Conn
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dgvEmp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

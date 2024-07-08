@@ -13,9 +13,11 @@ namespace Year2Conn
 {
     public partial class frmSell : Form
     {
-        public frmSell()
+        string uName;
+        public frmSell(string user)
         {
             InitializeComponent();
+            uName = user;
         }
 
         Connct cntn = new Connct();
@@ -116,6 +118,7 @@ namespace Year2Conn
             catch (Exception ex)
             {
                // MessageBox.Show("Error");
+
             }
         }
 
@@ -126,10 +129,36 @@ namespace Year2Conn
                 txtProductID.Text, txtProductName.Text, txtPrice.Text, txtQty.Text, lbUnit.Text, txtTotal.Text
             };
             ListViewItem lvi = new ListViewItem(AllData);
-            LV.Items.Add(lvi);
-            total = txtTotal.Text.Replace(",","");
-            amount = txtAmount.Text.Replace(",", "");
-            txtAmount.Text = (int.Parse(amount) + int.Parse(total)).ToString("#,###");
+            int lc = LV.Items.Count, a,s=0;
+            for (a=0; a<lc; a++)
+            {
+                if (LV.Items[a].SubItems[0].Text == txtProductID.Text)
+                {
+                    int price = int.Parse(txtPrice.Text.Replace(",", ""));
+                    int qty = int.Parse(LV.Items[a].SubItems[3].Text) + int.Parse(txtQty.Text);
+                    int amount;
+                    amount = int.Parse(txtAmount.Text.Replace(",", ""));
+                    amount = amount - int.Parse(LV.Items[a].SubItems[5].Text.Replace(",", ""));
+                    LV.Items[a].SubItems[3].Text = "" + qty;
+                    LV.Items[a].SubItems[5].Text = "" + (qty * price).ToString("#,###");
+                    amount = amount +(qty * price);
+                    txtAmount.Text = ""+amount.ToString("#,###");
+                    s = 1;
+                }
+            }
+
+            if (s == 1)
+            {
+                s = 0;
+            }
+            else
+            {
+                LV.Items.Add(lvi);
+                total = txtTotal.Text.Replace(",", "");
+                amount = txtAmount.Text.Replace(",", "");
+                txtAmount.Text = (int.Parse(amount) + int.Parse(total)).ToString("#,###");
+            }
+            s = 0;
 
         }
 
@@ -137,10 +166,10 @@ namespace Year2Conn
         {
             ListViewItem lvi = new ListViewItem() ;
             int i;
-            for (i=0; i<LV.SelectedItems.Count; i++)
+            for (i=0; i<LV.Items.Count; i++)
             {
-                lvi = LV.SelectedItems[i];
-                total = LV.SelectedItems[i].SubItems[5].Text;
+                lvi = LV.Items[i];
+                total = LV.Items[i].SubItems[5].Text;
             }
             LV.Items.Remove(lvi);
             total = total.Replace(",", "");
@@ -159,12 +188,12 @@ namespace Year2Conn
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string username = "ທ້າວແສງ";
+            //string username = "ທ້າວແສງ";
             cntn.cmd = new SqlCommand("insert into tbSale values(@billNo, @billDate, @billTime, @userName)",cntn.conn);
             cntn.cmd.Parameters.AddWithValue("@billNo", lbBillNo.Text);
             cntn.cmd.Parameters.AddWithValue("@billDate", Convert.ToDateTime(lbDate.Text).ToString("yyyy-MM-dd"));
             cntn.cmd.Parameters.AddWithValue("@billTime", lbTime.Text);
-            cntn.cmd.Parameters.AddWithValue("@userName", username);
+            cntn.cmd.Parameters.AddWithValue("@userName", uName);
             cntn.cmd.ExecuteNonQuery();
 
             int i;
@@ -200,6 +229,7 @@ namespace Year2Conn
             LV.Items.Clear();
             txtProductID.Focus();
             MessageBox.Show("Save");
+            txtAmount.Clear();
 
         }
 
@@ -208,7 +238,17 @@ namespace Year2Conn
             Close();
         }
 
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LV_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

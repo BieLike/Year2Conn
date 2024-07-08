@@ -18,7 +18,7 @@ namespace Year2Conn
             InitializeComponent();
         }
 
-        String strcon = "data source = DESKTOP-TSHJDI9\\SQLEXPRESS; initial catalog = HW1; integrated security = true";
+        String strcon = "data source = DESKTOP-7TT19G3\\SQLEXPRESS; initial catalog = HW1; integrated security = true";
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd = new SqlCommand();
@@ -43,15 +43,7 @@ namespace Year2Conn
 
         private void Form2_Activated(object sender, EventArgs e)
         {
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-            ds.Clear();
-            conn.ConnectionString = strcon;
-            conn.Open();
-            Showdata();
-            Clear();
+            
 
         }
         void Showdata()
@@ -110,7 +102,15 @@ namespace Year2Conn
 
         private void Category_Load(object sender, EventArgs e)
         {
-
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+            ds.Clear();
+            conn.ConnectionString = strcon;
+            conn.Open();
+            Showdata();
+            Clear();
         }
     }
 }
