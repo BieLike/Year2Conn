@@ -186,7 +186,7 @@ namespace Year2Conn
             /* frmSell frmS = new frmSell();
              frmS.MdiParent = this;
              frmS.Show();*/
-            frmSell frmS_vrb = new frmSell() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmSell frmS_vrb = new frmSell(un) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmS_vrb.FormBorderStyle = FormBorderStyle.None;
             this.panelSubMain.Controls.Clear();
             this.panelSubMain.Controls.Add(frmS_vrb);

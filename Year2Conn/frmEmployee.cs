@@ -98,5 +98,10 @@ namespace Year2Conn
         {
             Close();
         }
+
+        private void dgvEmp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
