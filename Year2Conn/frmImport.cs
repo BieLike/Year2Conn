@@ -164,6 +164,16 @@ namespace Year2Conn
             this.Close();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void AutoBill()
         {
             SqlDataAdapter daB = new SqlDataAdapter("Select Max(OrderID) from tbOrder",cnt.conn);

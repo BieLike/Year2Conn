@@ -143,33 +143,55 @@ namespace Year2Conn
 
         private void ຈດການຂມນປະເພດສນຄາToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Category frmC = new Category();
+           /* Category frmC = new Category();
             frmC.MdiParent = this;
-            frmC.Show();
+            frmC.Show();*/
+           this.panelSubMain.Controls.Clear();
+            Category frmCat_vrb = new Category() { Dock = DockStyle.Fill,TopLevel=false,TopMost=true};
+            frmCat_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add(frmCat_vrb);
+            frmCat_vrb.Show();
 
         }
 
         private void ຈດການຂມນຫວໜວຍToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Unit frmU = new Unit();
-            frmU.MdiParent = this;
-            frmU.Show();
+            /* Unit frmU = new Unit();
+             frmU.MdiParent = this;
+             frmU.Show();*/
+            this.panelSubMain.Controls.Clear();
+            Unit frmU_vrb = new Unit() { Dock = DockStyle.Fill,TopLevel=false,TopMost=true };
+            frmU_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add((frmU_vrb));
+            frmU_vrb.Show();
 
         }
 
         private void ຈດການຂມນສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduct frmP = new frmProduct();
+            /*frmProduct frmP = new frmProduct();
+             * 
             frmP.MdiParent = this;
-            frmP.Show();
+            frmP.Show();*/
+            this.panelSubMain.Controls.Clear();
+            frmProduct frmP_vrb = new frmProduct() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmP_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add(frmP_vrb);
+            frmP_vrb.Show();
 
         }
 
         private void ຂາຍສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSell frmS = new frmSell(un);
-            frmS.MdiParent = this;
-            frmS.Show();
+            /* frmSell frmS = new frmSell();
+             frmS.MdiParent = this;
+             frmS.Show();*/
+            frmSell frmS_vrb = new frmSell() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmS_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Clear();
+            this.panelSubMain.Controls.Add(frmS_vrb);
+            frmS_vrb.Show();
+            
         }
 
         private void ອອກຈາກລະບບToolStripMenuItem_Click(object sender, EventArgs e)
@@ -181,21 +203,31 @@ namespace Year2Conn
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void ຈດການຂມນຜສະໜອງToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSupplier fs = new frmSupplier();
+            /*frmSupplier fs = new frmSupplier();
             fs.MdiParent = this;
-            fs.Show();
+            fs.Show();*/
+            this.panelSubMain.Controls.Clear();
+            frmSupplier frmSP_vrb = new frmSupplier() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmSP_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add(frmSP_vrb);
+            frmSP_vrb.Show();
         }
 
         private void ຈດການຂມນຜໃຊToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEmployee fey = new frmEmployee();
+            /*frmEmployee fey = new frmEmployee();
             fey.MdiParent = this;
-            fey.Show();
+            fey.Show();*/
+            frmEmployee frmEP_vrb = new frmEmployee() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.panelSubMain.Controls.Clear();
+            frmEP_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add(frmEP_vrb);
+            frmEP_vrb.Show();
         }
 
         private void ນຳເຂາສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,9 +237,15 @@ namespace Year2Conn
 
         private void ກວດສອບແລະສງຊສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmImport fip = new frmImport();
+            /*frmImport fip = new frmImport();
             fip.MdiParent = this;
-            fip.Show();
+            fip.Show();*/
+            this.panelSubMain.Controls.Clear();
+            frmImport frmIMP_vrb = new frmImport() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmIMP_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Add(frmIMP_vrb);
+            frmIMP_vrb.Show();
+
         }
 
         private void ລາຍງານການຂາຍToolStripMenuItem_Click(object sender, EventArgs e)
@@ -219,30 +257,51 @@ namespace Year2Conn
 
         private void ລາຍງານສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRptProduct frp = new frmRptProduct();
+           /* frmRptProduct frp = new frmRptProduct();
             frp.MdiParent = this;
-            frp.Show();
+            frp.Show();*/
+           frmRptProduct frm = new frmRptProduct() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; 
+            frm.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Clear();
+            this.panelSubMain.Controls.Add(frm);
+            frm.Show();
+           
         }
 
         private void ລາຍງານການສງຊToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRptImport fri = new frmRptImport();
+            /*frmRptImport fri = new frmRptImport();
             fri.MdiParent = this;
-            fri.Show();
+            fri.Show();*/
+            frmRptImport frm = new frmRptImport() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frm.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Clear();
+            this.panelSubMain.Controls.Add(frm);
+            frm.Show();
         }
 
         private void ລາຍງານການຂາຍຕາມມToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRptByDate frd = new frmRptByDate();
+          /*  frmRptByDate frd = new frmRptByDate();
             frd.MdiParent = this;
-            frd.Show();
+            frd.Show();*/
+          frmRptByDate report = new frmRptByDate() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            report.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Clear();
+            this.panelSubMain.Controls.Add(report);
+            report.Show();
         }
 
         private void ລາຍງານສນຄາຂາຍດToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRptBestSell frbs = new frmRptBestSell();
+            /*frmRptBestSell frbs = new frmRptBestSell();
             frbs.MdiParent = this;
-            frbs.Show();
+            frbs.Show();*/
+            frmRptBestSell report = new frmRptBestSell() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            report.FormBorderStyle = FormBorderStyle.None;
+            this.panelSubMain.Controls.Clear();
+            this.panelSubMain.Controls.Add(report);
+            report.Show();
         }
 
         private void ລາຍງານToolStripMenuItem_Click(object sender, EventArgs e)
