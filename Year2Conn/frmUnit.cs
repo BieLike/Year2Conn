@@ -113,5 +113,10 @@ namespace Year2Conn
             txtUnit.Clear();
             txtUnitID.Focus();
         }
+
+        private void Unit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

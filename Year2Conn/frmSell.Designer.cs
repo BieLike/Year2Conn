@@ -112,6 +112,7 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ຂໍ້ມູນສິນຄ້າ";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cbAuto
             // 
@@ -160,6 +161,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(226, 36);
             this.txtPrice.TabIndex = 16;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // txtProductID
             // 
@@ -366,6 +368,7 @@
             this.LV.Size = new System.Drawing.Size(1153, 240);
             this.LV.TabIndex = 22;
             this.LV.UseCompatibleStateImageBehavior = false;
+            this.LV.SelectedIndexChanged += new System.EventHandler(this.LV_SelectedIndexChanged);
             // 
             // timer1
             // 

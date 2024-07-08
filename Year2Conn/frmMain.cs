@@ -13,6 +13,7 @@ namespace Year2Conn
     public partial class frmMain : Form
     {
         private int childFormNumber = 0;
+        public string un;
 
         public frmMain(string username, string author)
         {
@@ -42,6 +43,7 @@ namespace Year2Conn
                 ຂາຍສນຄາToolStripMenuItem.Enabled = true;
 
             }
+            un = username;
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -165,7 +167,7 @@ namespace Year2Conn
 
         private void ຂາຍສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSell frmS = new frmSell();
+            frmSell frmS = new frmSell(un);
             frmS.MdiParent = this;
             frmS.Show();
         }
@@ -174,6 +176,7 @@ namespace Year2Conn
         {
             Close();
             frmLogin fln = new frmLogin();
+            fln.MdiParent = this;
             fln.Show();
         }
 
@@ -185,12 +188,14 @@ namespace Year2Conn
         private void ຈດການຂມນຜສະໜອງToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSupplier fs = new frmSupplier();
+            fs.MdiParent = this;
             fs.Show();
         }
 
         private void ຈດການຂມນຜໃຊToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEmployee fey = new frmEmployee();
+            fey.MdiParent = this;
             fey.Show();
         }
 
@@ -202,36 +207,42 @@ namespace Year2Conn
         private void ກວດສອບແລະສງຊສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmImport fip = new frmImport();
+            fip.MdiParent = this;
             fip.Show();
         }
 
         private void ລາຍງານການຂາຍToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRptSell frs = new frmRptSell();
+            frs.MdiParent = this;
             frs.Show();
         }
 
         private void ລາຍງານສນຄາToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRptProduct frp = new frmRptProduct();
+            frp.MdiParent = this;
             frp.Show();
         }
 
         private void ລາຍງານການສງຊToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRptImport fri = new frmRptImport();
+            fri.MdiParent = this;
             fri.Show();
         }
 
         private void ລາຍງານການຂາຍຕາມມToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRptByDate frd = new frmRptByDate();
+            frd.MdiParent = this;
             frd.Show();
         }
 
         private void ລາຍງານສນຄາຂາຍດToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmRptBestSell frbs = new frmRptBestSell();
+            frbs.MdiParent = this;
             frbs.Show();
         }
 
