@@ -43,15 +43,7 @@ namespace Year2Conn
 
         private void Form2_Activated(object sender, EventArgs e)
         {
-            if (conn.State == ConnectionState.Open)
-            {
-                conn.Close();
-            }
-            ds.Clear();
-            conn.ConnectionString = strcon;
-            conn.Open();
-            Showdata();
-            Clear();
+            
 
         }
         void Showdata()
@@ -110,7 +102,15 @@ namespace Year2Conn
 
         private void Category_Load(object sender, EventArgs e)
         {
-
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
+            ds.Clear();
+            conn.ConnectionString = strcon;
+            conn.Open();
+            Showdata();
+            Clear();
         }
     }
 }

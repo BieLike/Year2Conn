@@ -61,6 +61,7 @@ namespace Year2Conn
         private void frmEmployee_Load(object sender, EventArgs e)
         {
             ShowData();
+            dgvEmp.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
 
         }
 
