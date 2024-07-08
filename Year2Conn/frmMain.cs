@@ -176,7 +176,6 @@ namespace Year2Conn
         {
             Close();
             frmLogin fln = new frmLogin();
-            fln.MdiParent = this;
             fln.Show();
         }
 
