@@ -208,6 +208,11 @@ namespace Year2Conn
             Close();
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void txtQty_TextChanged(object sender, EventArgs e)
         {
             try

@@ -68,7 +68,7 @@
             this.label2.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(26, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 24);
+            this.label2.Size = new System.Drawing.Size(76, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "ລະຫັດສິນຄ້າ";
             // 
@@ -78,7 +78,7 @@
             this.label3.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(61, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 24);
+            this.label3.Size = new System.Drawing.Size(41, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "ລາຄາ";
             // 
@@ -112,6 +112,7 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ຂໍ້ມູນສິນຄ້າ";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cbAuto
             // 
@@ -212,7 +213,7 @@
             this.lbBillNo.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBillNo.Location = new System.Drawing.Point(1033, 177);
             this.lbBillNo.Name = "lbBillNo";
-            this.lbBillNo.Size = new System.Drawing.Size(43, 24);
+            this.lbBillNo.Size = new System.Drawing.Size(43, 21);
             this.lbBillNo.TabIndex = 12;
             this.lbBillNo.Text = "BillNo";
             // 
@@ -222,7 +223,7 @@
             this.label11.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(944, 177);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 24);
+            this.label11.Size = new System.Drawing.Size(83, 21);
             this.label11.TabIndex = 11;
             this.label11.Text = "ເລກທີໃບບິນ :";
             // 
@@ -232,7 +233,7 @@
             this.lbTime.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.Location = new System.Drawing.Point(789, 177);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(39, 24);
+            this.lbTime.Size = new System.Drawing.Size(39, 21);
             this.lbTime.TabIndex = 10;
             this.lbTime.Text = "Time";
             // 
@@ -242,7 +243,7 @@
             this.label9.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(733, 177);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 24);
+            this.label9.Size = new System.Drawing.Size(50, 21);
             this.label9.TabIndex = 9;
             this.label9.Text = "ເວລາ :";
             // 
@@ -252,7 +253,7 @@
             this.lbDate.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.Location = new System.Drawing.Point(580, 177);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(37, 24);
+            this.lbDate.Size = new System.Drawing.Size(37, 21);
             this.lbDate.TabIndex = 8;
             this.lbDate.Text = "Date";
             // 
@@ -262,7 +263,7 @@
             this.label7.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(528, 177);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 24);
+            this.label7.Size = new System.Drawing.Size(46, 21);
             this.label7.TabIndex = 7;
             this.label7.Text = "ວັນທີ :";
             // 
@@ -272,7 +273,7 @@
             this.label1.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(792, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 24);
+            this.label1.Size = new System.Drawing.Size(75, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "ລວມເປັນເງິນ";
             // 
@@ -282,7 +283,7 @@
             this.lbUnit.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUnit.Location = new System.Drawing.Point(681, 111);
             this.lbUnit.Name = "lbUnit";
-            this.lbUnit.Size = new System.Drawing.Size(55, 24);
+            this.lbUnit.Size = new System.Drawing.Size(55, 21);
             this.lbUnit.TabIndex = 5;
             this.lbUnit.Text = "ຫົວໜ່ວຍ";
             // 
@@ -292,7 +293,7 @@
             this.label5.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(458, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 24);
+            this.label5.Size = new System.Drawing.Size(49, 21);
             this.label5.TabIndex = 4;
             this.label5.Text = "ຈຳນວນ";
             // 
@@ -302,7 +303,7 @@
             this.label4.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(458, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 24);
+            this.label4.Size = new System.Drawing.Size(50, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "ຊື່ສິນຄ້າ";
             // 
@@ -353,7 +354,7 @@
             this.label8.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(803, 499);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 24);
+            this.label8.Size = new System.Drawing.Size(123, 21);
             this.label8.TabIndex = 20;
             this.label8.Text = "ລວມເປັນເງິນທັງໝົດ :";
             // 
