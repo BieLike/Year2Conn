@@ -53,7 +53,6 @@
             this.lbUnit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
             this.label2.Location = new System.Drawing.Point(26, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 21);
@@ -76,6 +76,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Location = new System.Drawing.Point(61, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 21);
@@ -84,7 +85,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FloralWhite;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(72)))), ((int)(((byte)(116)))));
             this.groupBox1.Controls.Add(this.cbAuto);
             this.groupBox1.Controls.Add(this.txtTotal);
             this.groupBox1.Controls.Add(this.txtQty);
@@ -106,7 +107,8 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.groupBox1.Location = new System.Drawing.Point(225, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1153, 212);
             this.groupBox1.TabIndex = 3;
@@ -175,15 +177,17 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.ImageIndex = 1;
             this.btnCancel.ImageList = this.imageList1;
-            this.btnCancel.Location = new System.Drawing.Point(241, 165);
+            this.btnCancel.Location = new System.Drawing.Point(259, 157);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(185, 41);
+            this.btnCancel.Size = new System.Drawing.Size(232, 41);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "ຍົກເລີກລາຍການຂາຍ";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // imageList1
@@ -197,21 +201,24 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAdd.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.ImageIndex = 0;
             this.btnAdd.ImageList = this.imageList1;
-            this.btnAdd.Location = new System.Drawing.Point(0, 165);
+            this.btnAdd.Location = new System.Drawing.Point(21, 157);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(197, 41);
+            this.btnAdd.Size = new System.Drawing.Size(220, 41);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "ເພີ່ມລາຍການຂາຍ";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lbBillNo
             // 
             this.lbBillNo.AutoSize = true;
             this.lbBillNo.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBillNo.ForeColor = System.Drawing.SystemColors.Window;
             this.lbBillNo.Location = new System.Drawing.Point(1033, 177);
             this.lbBillNo.Name = "lbBillNo";
             this.lbBillNo.Size = new System.Drawing.Size(43, 21);
@@ -222,6 +229,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Window;
             this.label11.Location = new System.Drawing.Point(944, 177);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(83, 21);
@@ -232,6 +240,7 @@
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.SystemColors.Window;
             this.lbTime.Location = new System.Drawing.Point(789, 177);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(39, 21);
@@ -242,6 +251,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Window;
             this.label9.Location = new System.Drawing.Point(733, 177);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 21);
@@ -252,6 +262,7 @@
             // 
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.SystemColors.Window;
             this.lbDate.Location = new System.Drawing.Point(580, 177);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(37, 21);
@@ -262,6 +273,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Window;
             this.label7.Location = new System.Drawing.Point(528, 177);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 21);
@@ -272,6 +284,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(792, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 21);
@@ -282,6 +295,7 @@
             // 
             this.lbUnit.AutoSize = true;
             this.lbUnit.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUnit.ForeColor = System.Drawing.SystemColors.Window;
             this.lbUnit.Location = new System.Drawing.Point(681, 111);
             this.lbUnit.Name = "lbUnit";
             this.lbUnit.Size = new System.Drawing.Size(55, 21);
@@ -292,6 +306,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Window;
             this.label5.Location = new System.Drawing.Point(458, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 21);
@@ -302,38 +317,27 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
             this.label4.Location = new System.Drawing.Point(458, 47);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "ຊື່ສິນຄ້າ";
             // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExit.ImageIndex = 3;
-            this.btnExit.ImageList = this.imageList1;
-            this.btnExit.Location = new System.Drawing.Point(253, 489);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(185, 36);
-            this.btnExit.TabIndex = 21;
-            this.btnExit.Text = "ອອກ";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnSave
             // 
-            this.btnSave.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnSave.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.ImageIndex = 2;
             this.btnSave.ImageList = this.imageList1;
-            this.btnSave.Location = new System.Drawing.Point(12, 489);
+            this.btnSave.Location = new System.Drawing.Point(787, 499);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(185, 36);
+            this.btnSave.Size = new System.Drawing.Size(249, 50);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "ບັນທຶກການຂາຍ";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtAmount
@@ -341,7 +345,7 @@
             this.txtAmount.BackColor = System.Drawing.Color.Black;
             this.txtAmount.Font = new System.Drawing.Font("Saysettha OT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtAmount.Location = new System.Drawing.Point(932, 489);
+            this.txtAmount.Location = new System.Drawing.Point(1185, 513);
             this.txtAmount.Multiline = true;
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(193, 36);
@@ -353,7 +357,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Saysettha OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(803, 499);
+            this.label8.Location = new System.Drawing.Point(1056, 517);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 21);
             this.label8.TabIndex = 20;
@@ -363,7 +367,7 @@
             // 
             this.LV.Font = new System.Drawing.Font("Saysettha OT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LV.HideSelection = false;
-            this.LV.Location = new System.Drawing.Point(12, 230);
+            this.LV.Location = new System.Drawing.Point(225, 243);
             this.LV.Name = "LV";
             this.LV.Size = new System.Drawing.Size(1153, 240);
             this.LV.TabIndex = 22;
@@ -378,12 +382,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1177, 534);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1638, 788);
             this.Controls.Add(this.LV);
             this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -420,7 +423,6 @@
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtProductID;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label label8;

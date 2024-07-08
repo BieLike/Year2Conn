@@ -11,7 +11,7 @@ namespace Year2Conn
 {
     internal class Connct
     {
-            public String strcon = "data source = DESKTOP-7TT19G3\\SQLEXPRESS; initial catalog = HW1; integrated security= true";
+            public String strcon = "data source = DESKTOP-TSHJDI9\\SQLEXPRESS; initial catalog = HW1; integrated security= true";
             public SqlConnection conn = new SqlConnection();
             public SqlDataAdapter da = new SqlDataAdapter();
             public SqlCommand cmd = new SqlCommand();
