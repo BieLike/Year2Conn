@@ -38,32 +38,36 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbBillNum = new System.Windows.Forms.Label();
             this.btnImport = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImport)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbSupplier
             // 
+            this.cmbSupplier.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSupplier.FormattingEnabled = true;
-            this.cmbSupplier.Location = new System.Drawing.Point(103, 7);
+            this.cmbSupplier.Location = new System.Drawing.Point(243, 31);
             this.cmbSupplier.Name = "cmbSupplier";
-            this.cmbSupplier.Size = new System.Drawing.Size(321, 28);
+            this.cmbSupplier.Size = new System.Drawing.Size(321, 35);
             this.cmbSupplier.TabIndex = 0;
+            this.cmbSupplier.SelectedIndexChanged += new System.EventHandler(this.cmbSupplier_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 10);
+            this.label1.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(130, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "ຜູ້ສະໜອງສິນຄ້າ";
             // 
             // dgvProduct
             // 
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Location = new System.Drawing.Point(12, 42);
+            this.dgvProduct.Location = new System.Drawing.Point(732, 26);
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 24;
@@ -76,7 +80,7 @@
             // dgvImport
             // 
             this.dgvImport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvImport.Location = new System.Drawing.Point(14, 392);
+            this.dgvImport.Location = new System.Drawing.Point(732, 340);
             this.dgvImport.Name = "dgvImport";
             this.dgvImport.RowHeadersWidth = 51;
             this.dgvImport.RowTemplate.Height = 24;
@@ -86,9 +90,10 @@
             // 
             // btnCheckItem
             // 
-            this.btnCheckItem.Location = new System.Drawing.Point(10, 339);
+            this.btnCheckItem.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckItem.Location = new System.Drawing.Point(32, 93);
             this.btnCheckItem.Name = "btnCheckItem";
-            this.btnCheckItem.Size = new System.Drawing.Size(177, 47);
+            this.btnCheckItem.Size = new System.Drawing.Size(195, 47);
             this.btnCheckItem.TabIndex = 4;
             this.btnCheckItem.Text = "ກວດສອບສິນຄ້າໃນຮ້ານ";
             this.btnCheckItem.UseVisualStyleBackColor = true;
@@ -96,7 +101,8 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(193, 339);
+            this.btnAdd.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(247, 93);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(142, 47);
             this.btnAdd.TabIndex = 5;
@@ -106,7 +112,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(341, 339);
+            this.btnDelete.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(422, 93);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(142, 47);
             this.btnDelete.TabIndex = 6;
@@ -117,65 +124,66 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(621, 352);
+            this.label2.Font = new System.Drawing.Font("Saysettha OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(271, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(118, 27);
             this.label2.TabIndex = 7;
             this.label2.Text = "ເລກທີໃບບິນ :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbBillNum
             // 
             this.lbBillNum.AutoSize = true;
-            this.lbBillNum.Location = new System.Drawing.Point(703, 352);
+            this.lbBillNum.Location = new System.Drawing.Point(512, 181);
             this.lbBillNum.Name = "lbBillNum";
-            this.lbBillNum.Size = new System.Drawing.Size(50, 20);
+            this.lbBillNum.Size = new System.Drawing.Size(52, 18);
             this.lbBillNum.TabIndex = 8;
             this.lbBillNum.Text = "BillNum";
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(14, 689);
+            this.btnImport.Font = new System.Drawing.Font("Phetsarath OT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.Location = new System.Drawing.Point(32, 164);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(177, 47);
+            this.btnImport.Size = new System.Drawing.Size(195, 47);
             this.btnImport.TabIndex = 10;
             this.btnImport.Text = "ນຳເຂົ້າສິນຄ້າ";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
-            // btnExit
+            // panel1
             // 
-            this.btnExit.Location = new System.Drawing.Point(197, 689);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(133, 47);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "ອອກ";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnImport);
+            this.panel1.Controls.Add(this.cmbSupplier);
+            this.panel1.Controls.Add(this.btnCheckItem);
+            this.panel1.Controls.Add(this.lbBillNum);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Location = new System.Drawing.Point(14, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(685, 229);
+            this.panel1.TabIndex = 11;
             // 
             // frmImport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 741);
-            this.Controls.Add(this.btnImport);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.lbBillNum);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnCheckItem);
+            this.ClientSize = new System.Drawing.Size(1620, 741);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvImport);
             this.Controls.Add(this.dgvProduct);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbSupplier);
             this.Font = new System.Drawing.Font("Phetsarath OT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmImport";
             this.Text = "frmImport";
             this.Load += new System.EventHandler(this.frmImport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImport)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -191,6 +199,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbBillNum;
         private System.Windows.Forms.Button btnImport;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel1;
     }
 }
